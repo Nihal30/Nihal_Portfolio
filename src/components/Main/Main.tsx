@@ -15,6 +15,12 @@ import reactIcon from "../../assets/react-icon.svg";
 import typescriptIcon from "../../assets/typescript-icon.svg";
 import vueIcon from "../../assets/vue-icon.svg";
 import boostrapIcon from "../../assets/bootstrap-icon.svg";
+import MUI  from '../../assets/Mui.svg'
+import React2 from '../../assets/react-2.svg'
+import Nextjs from '../../assets/Nextjs.svg'
+import Nodejs from '../../assets/NodeJS.svg'
+import tailwind from '../../assets/tailwindcss.svg'
+import vitejs from '../../assets/vitejs.svg'
 
 export function Main() {
   return (
@@ -148,23 +154,43 @@ export function Main() {
                 "weight": "400"
               },
               "image": [
-                {
-                  "src": boostrapIcon,
-                  "width": 20,
-                  "height": 20
-                },
+                // {
+                //   "src": boostrapIcon,
+                //   "width": 20,
+                //   "height": 20
+                // },
                 {
                   "src": cssIcon,
                   "width": 20,
                   "height": 20
                 },
                 {
-                  "src": wordpress,
+                  "src": vitejs,
                   "width": 20,
                   "height": 20
                 },
                 {
-                  "src": shopify,
+                  "src": tailwind,
+                  "width": 20,
+                  "height": 20
+                },
+                {
+                  "src": Nodejs,
+                  "width": 20,
+                  "height": 20
+                },
+                {
+                  "src": Nextjs,
+                  "width": 20,
+                  "height": 20
+                },
+                {
+                  "src": React2,
+                  "width": 20,
+                  "height": 20
+                },
+                {
+                  "src":MUI ,
                   "width": 20,
                   "height": 20
                 },
@@ -203,16 +229,12 @@ export function Main() {
                   "width": 20,
                   "height": 20
                 },
+               
                 // {
-                //   "src": vscodeIcon,
+                //   "src": vueIcon,
                 //   "width": 20,
                 //   "height": 20
                 // },
-                {
-                  "src": vueIcon,
-                  "width": 20,
-                  "height": 20
-                },
 
               ],
               "polygon": {
@@ -256,9 +278,9 @@ export function Main() {
         }}
       />
       <Hero></Hero>
-      {/* <About></About> */}
-      {/* <Project></Project> */}
-      {/* <Contact></Contact> */}
+      <About></About> 
+      <Project></Project>
+       <Contact></Contact>
     </Container>
   );
 }

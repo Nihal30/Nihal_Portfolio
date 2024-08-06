@@ -5,6 +5,7 @@ import githubIcon from '../../assets/github.svg'
 import whatsapp from '../../assets/whatsapp.svg'
 import telegram from '../../assets/telegram.svg'
 import instagramIcon from '../../assets/instagram.svg'
+import gmailIcon from "../../assets/gmail.svg"
 // import discordIcon from '../../assets/discord.png'
 
 export function Footer() {
@@ -35,13 +36,13 @@ export function Footer() {
         >
           <img src={githubIcon} alt="GitHub" />
         </a>
-        <a
+        {/* <a
           href="#"
           target="_blank"
           rel="noreferrer"
         >
           <img src={whatsapp} alt="Whatsapp" />
-        </a>
+        </a> */}
         <a
           href="#"
           target="_blank"
@@ -54,7 +55,7 @@ export function Footer() {
           target="_blank"
           rel="noreferrer"
         >
-          <img src={instagramIcon} alt="Instagram" />
+          <img src={gmailIcon} alt="Instagram" />
         </a>
       </div>
     </Container>

@@ -43,49 +43,49 @@ export function Form() {
       </ContainerSucces>
     )
   }
-  return (
-    <Container>
-      <h2>Get in touch using the form</h2>
-      <form onSubmit={handleSubmit}>
-        <input
-          placeholder="Email"
-          id="email"
-          type="email"
-          name="email"
-          onChange={(e) => {
-            verifyEmail(e.target.value)
-          }}
-          required
-        />
-        <ValidationError prefix="Email" field="email" errors={state.errors} />
-        <textarea
-          required
-          placeholder="Send a message to get started."
-          id="message"
-          name="message"
-          onChange={(e) => {
-            setMessage(e.target.value)
-          }}
-        />
-        <ValidationError
-          prefix="Message"
-          field="message"
-          errors={state.errors}
-        />
-        <ReCAPTCHA
-          sitekey="6Lfj9NYfAAAAAP8wPLtzrsSZeACIcGgwuEIRvbSg"
-          onChange={(e) => {
-            setIsHuman(true)
-          }}
-        ></ReCAPTCHA>
-        <button
-          type="submit"
-          disabled={state.submitting || !validEmail || !message || !isHuman}
-        >
-          Submit
-        </button>
-      </form>
-      <ToastContainer />
-    </Container>
-  )
+  // return (
+  //   // <Container>
+  //   //   <h2>Get in touch using the form</h2>
+  //   //   <form onSubmit={handleSubmit}>
+  //   //     <input
+  //   //       placeholder="Email"
+  //   //       id="email"
+  //   //       type="email"
+  //   //       name="email"
+  //   //       onChange={(e) => {
+  //   //         verifyEmail(e.target.value)
+  //   //       }}
+  //   //       required
+  //   //     />
+  //   //     <ValidationError prefix="Email" field="email" errors={state.errors} />
+  //   //     <textarea
+  //   //       required
+  //   //       placeholder="Send a message to get started."
+  //   //       id="message"
+  //   //       name="message"
+  //   //       onChange={(e) => {
+  //   //         setMessage(e.target.value)
+  //   //       }}
+  //   //     />
+  //   //     <ValidationError
+  //   //       prefix="Message"
+  //   //       field="message"
+  //   //       errors={state.errors}
+  //   //     />
+  //   //     {/* <ReCAPTCHA
+  //   //       sitekey="6Lfj9NYfAAAAAP8wPLtzrsSZeACIcGgwuEIRvbSg"
+  //   //       onChange={(e) => {
+  //   //         setIsHuman(true)
+  //   //       }}
+  //   //     ></ReCAPTCHA> */}
+  //   //     <button
+  //   //       type="submit"
+  //   //       // disabled={state.submitting || !validEmail || !message }
+  //   //     >
+  //   //       Submit
+  //   //     </button>
+  //   //   </form>
+  //   //   <ToastContainer />
+  //   // </Container>
+  // )
 }
